@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+.wrapper{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* header */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+}
+
+
+.menu{
+    float:left
+}
+.menu_items{
+    display: flex;
+}
+.menu_item{
+    padding: 10px;
+}
+.menu_item:first-child{
+    margin-left: 10px;
+}
+.menu_items a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #313030;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_item{
+    padding: 10px;
+}
+/* end-header  */
+
+.paragraph {
+    font-family: Graphik,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 1.6rem;
+}
+
+.section_1 .wrapper{
+    display: flex;
+}
+
+
+
+/* slider */
+
+.section {
+    /* Add section styles */
+  }
+  
+.swiper-container {
+width: 50%;
+position: relative;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+max-width: 100%;
+
+}
+  
+.custom-pagination-container {
+position: absolute;
+bottom: -0px; /* Adjust the distance from the bottom as needed */
+width: 100%;
+text-align: center;
+}
+
+/* Style the pagination dots */
+.swiper-pagination {
+position: relative;
+display: flex;
+justify-content: center;
+margin-top: 10px; /* Adjust the margin between the slides and pagination dots */
+}
+
+.swiper-pagination-bullet {
+width: 15px; /* Adjust the width of each pagination dot */
+height: 15px; /* Adjust the height of each pagination dot */
+background-color: #999; /* Set the background color of the pagination dots */
+opacity: 0.7; /* Set the opacity of inactive pagination dots */
+margin: 0 5px; /* Adjust the margin between each pagination dot */
+}
+
+.swiper-pagination-bullet-active {
+background-color: #333; /* Set the background color of the active pagination dot */
+}
+  
+
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Customize the navigation arrows for the second slider */
+  .slider2 .swiper-button-next,
+  .slider2 .swiper-button-prev {
+    color: #fff; /* Set the color of the navigation arrows */
+  }
+  
+  /* Customize the pagination dots for the second slider */
+  .slider2 .swiper-pagination-bullet {
+    background-color: #999; /* Set the background color of the pagination dots */
+    opacity: 0.7; /* Set the opacity of inactive pagination dots */
+  }
+  
+  .slider2 .swiper-pagination-bullet-active {
+    background-color: #333; /* Set the background color of the active pagination dot */
+  }
+/* end_slider */
+.info{
+    padding: 15px;
+    max-width: 50%;
+}
+.info h2{
+    font-size: 70px;
+    color: #1B45E3;
+}
+.info p{
+    margin-left: 35px;
+    line-height: 1.5;
+}
+
+.info input{
+    margin-left: 20px;
+    border: #9c9c9c 1px solid;
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px
+}
+
+.section_1 .info button{
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #313030;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.popular{
+    margin-top: 25px;
+}
+
+.popular a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #313055;
+    background-color: #9c9c9c;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+.popular a:hover{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #313055;
+    background-color: #d3d3d3;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+
+.card-section{
+    margin-top: 20px;
+    background-color: #cdcdcd;
+    padding: 50px;
+}
+.card-section .title{
+    display: flex;
+    justify-content: space-between;
+}
+.card-section title h3{
+    display: inline;
+}
+.span-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.span-arrow{
+    font-size: 20px;
+}
+
+
+.card-section .cards-container1, .cards-container2 {
+    overflow: hidden; /* Скрыть полосу прокрутки */
+    white-space: nowrap;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+
+.card-section .card {
+    margin-right: 20px;
+    overflow: hidden;
+    width: 232px;
+
+    border-radius: 10px;
+    flex-shrink: 0; /* Запрещаем уменьшение размера карточек */
+}
+
+.card-section .img{
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 20px;
+    overflow: hidden;
+    height: 191px;
+}
+
+.card-section .card img{
+    overflow: hidden;
+    width: 100%;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.card-section p{
+    padding: 10px;
+}
+
+.card-section .card:hover img{
+    overflow: hidden;
+    width: 105%;
+    object-fit: contain;
+    vertical-align: middle;
+
+}
+.card-section .card:hover {
+    box-shadow: 0 0 5px #000000;
+  }
+
+
+.section_3 .wrapper{
+    padding: 40px 0;
+    display: flex;
+}
+.section_3 a{
+    text-decoration: none;
+    color: #313030;
+    font-size: 30px;
+}
+.section_3 a:hover{
+    text-decoration: underline;
+    transform: 1;
+    color: #313030;
+    font-size: 30px;
+}
+
+.section_4{
+    text-align: center;
+}
+.section_4 h3{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -.025em;
+}
+
+.section_4 .cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.section_4 .card{
+    width: 360px;
+    overflow: hidden;
+    align-items: center;
+}
+.section_4 img{
+    object-fit: fill;
+}
+.section_4 h4{
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -.005em;
+    line-height: 1.25;
+}
+.section_4 p{
+    font-family: Graphik,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 1.6rem;
+}
+.section_4 h5{
+    font-size: 24px;
+   
+}
+
+.section_5 .wrapper{
+    display: flex;
+}
+
+.section_5 h2{
+    color: #FE5F50;
+}
+
+.section_5 a{
+    text-decoration: none;
+    color: #313030;
+    font-size: 30px;
+}
+.section_5 a:hover{
+    text-decoration: underline;
+    transform: 1;
+    color: #313030;
+    font-size: 30px;
+}
+
+.section_6 h5{
+    text-align: center;
+    font-size: 20px;
+}
+.custom-next,
+.custom-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px; /* Set the width of the arrows */
+  height: 60px; /* Set the height of the arrows */
+  background-color: orange; /* Set the background color of the arrows */
+  border-radius: 50%; /* Make the arrows circular */
+  color: #fff; /* Set the color of the arrows */
+  font-size: 20px; /* Set the font size of the arrows */
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev {
+  left: 15px; /* Adjust the distance from the left */
+}
+
+.custom-next {
+  right: 15px; /* Adjust the distance from the right */
+}
+.section_7 .cards{
+    display: flex;
+}
+.section_7 .card{
+    width: 50%;
+    border-top: #989898 1px solid;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.section_7 .card:first-child{
+    border-right: #989898 1px solid;
+}
+.section_7 .card h4{
+    font-size: 30px;
+    margin-top: 0px;
+}
+.section_7 .card:first-child h4{
+    color: #3B3DD3;
+    
+}
+.section_7 img{
+    max-width: 100%;
+}
+.section_7 .container .item {
+    display: flex;
+    align-items: center;
+}
+.section_7 .container .item .img{
+    margin-top: 10px;
+    max-width: 200px;
+}
+.section_7 .container .item .text{
+    margin-left: 10px;
+    
+}
+footer {
+    background-color: #807f7f;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    max-width: 100px; /* Adjust the max width of your logo */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
